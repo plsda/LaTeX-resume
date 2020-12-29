@@ -73,7 +73,7 @@
 
 
 %[icon]{title/name, contents}
-\newcommand*{\textField}[3][]{\mbox{\makebox[5mm]{#1} {\mdseries #2}{#3}}} 
+\newcommand*{\textField}[2][]{\mbox{\makebox[5mm]{#1}{#2}}} 
 
 \newcommand*{\cvHeader}[7]{
 \begin{enumerate}[label={},leftmargin=-\marginparwidth]
@@ -89,13 +89,10 @@
 			\hspace{1cm}
 			\begin{minipage}[c][\headerheight][c]{10cm}
 				\begin{flushleft}
-					%\textField[\hspace{-1mm}\faEnvelope]{Email: }{#4} \\
-					%\textField[\faPhone]{Mobile: }{#5} \\
-					%\textField[\faGithub]{GitHub: }{\href{https://github.com/#6}{#6}}
-					\textField[\faEnvelope]{}{\color{cvWhite} #4} \\
-					\textField[\faPhone]{}{\color{cvWhite} #5} \\
-					\textField[\faGithub]{}{\color{cvWhite}\href{https://github.com/#6}{https://github.com/#6}} \\
-					\textField[\faMapMarker]{}{\color{cvWhite} #7}\\
+					\textField[\faEnvelope]{\color{cvWhite} #4} \\
+					\textField[\faPhone]{\color{cvWhite} #5} \\
+					\textField[\faGithub]{\color{cvWhite}\href{https://github.com/#6}{https://github.com/#6}} \\
+					\textField[\faMapMarker]{\color{cvWhite} #7}\\
 				\end{flushleft}
 			\end{minipage}
 		\end{minipage} 
